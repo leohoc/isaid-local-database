@@ -1,0 +1,27 @@
+{
+  "TableName": "ProphetLogin",
+  "KeySchema": [
+    {
+      "KeyType": "HASH",
+      "AttributeName": "Login"
+    },
+    {
+      "KeyType": "RANGE",
+      "AttributeName": "ProphetUUID"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "Login",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "ProphetUUID",
+      "AttributeType": "S"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "WriteCapacityUnits": 5,
+    "ReadCapacityUnits": 5
+  }
+}

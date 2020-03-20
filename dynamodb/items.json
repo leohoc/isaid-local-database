@@ -1,0 +1,13 @@
+{
+  "TableName": "ProphetLogin",
+  "Item":
+    {
+      "Login": {
+        "S": "lcarvalho"
+      },
+      "ProphetUUID": {
+        "S": "c25b1d8b-4246-408c-8521-937cf13a38be"
+      }
+    }
+}
+
