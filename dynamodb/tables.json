@@ -1,22 +1,22 @@
 {
-  "TableName": "ProphetLogin",
+  "TableName": "Prophet",
   "KeySchema": [
     {
       "KeyType": "HASH",
-      "AttributeName": "Login"
+      "AttributeName": "login"
     },
     {
       "KeyType": "RANGE",
-      "AttributeName": "ProphetUUID"
+      "AttributeName": "prophetCode"
     }
   ],
   "AttributeDefinitions": [
     {
-      "AttributeName": "Login",
+      "AttributeName": "login",
       "AttributeType": "S"
     },
     {
-      "AttributeName": "ProphetUUID",
+      "AttributeName": "prophetCode",
       "AttributeType": "S"
     }
   ],
