@@ -4,19 +4,11 @@
     {
       "KeyType": "HASH",
       "AttributeName": "login"
-    },
-    {
-      "KeyType": "RANGE",
-      "AttributeName": "prophetCode"
     }
   ],
   "AttributeDefinitions": [
     {
       "AttributeName": "login",
-      "AttributeType": "S"
-    },
-    {
-      "AttributeName": "prophetCode",
       "AttributeType": "S"
     }
   ],
