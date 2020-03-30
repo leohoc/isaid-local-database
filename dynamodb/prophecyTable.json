@@ -1,0 +1,27 @@
+{
+  "TableName": "Prophecy",
+  "KeySchema": [
+    {
+      "KeyType": "HASH",
+      "AttributeName": "prophetCode"
+    },
+    {
+      "KeyType": "RANGE",
+      "AttributeName": "prophecyTimestamp"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "prophetCode",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "prophecyTimestamp",
+      "AttributeType": "S"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "WriteCapacityUnits": 5,
+    "ReadCapacityUnits": 5
+  }
+}
