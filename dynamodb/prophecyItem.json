@@ -6,7 +6,13 @@
         "S": "c25b1d8b-4246-408c-8521-937cf13a38be"
       },
       "prophecyTimestamp": {
-        "S": "2020-03-30T10:15:00.45Z"
+        "S": "2020-03-30T10:15:00.455"
+      },
+      "summary": {
+        "S": "Prophecy summary"
+      },
+      "description": {
+        "S": "Prophecy description"
       }
     }
 }
