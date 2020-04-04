@@ -1,10 +1,10 @@
-# ISAID-DATABASE-MIGRATION
+# ISAID-LOCAL-DATABASE
 
 > Development in progress
 
 ### Description
 
-Scripts for creating the database objects of the ISAID project.
+Scripts for creating the database objects of the ISAID project in a local database.
 Currently it uses a DynamoDB instance.
 
 ### Development
