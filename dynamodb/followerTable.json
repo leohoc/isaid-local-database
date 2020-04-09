@@ -1,0 +1,53 @@
+{
+  "TableName": "Follower",
+  "KeySchema": [
+    {
+      "KeyType": "HASH",
+      "AttributeName": "followerCode"
+    },
+    {
+      "KeyType": "RANGE",
+      "AttributeName": "eventTimestamp"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "followerCode",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "eventTimestamp",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "prophetCode",
+      "AttributeType": "S"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "WriteCapacityUnits": 5,
+    "ReadCapacityUnits": 5
+  },
+  "GlobalSecondaryIndexes": [
+  {
+    "IndexName": "ProphetFollowersIndex",
+    "Projection": {
+      "ProjectionType": "ALL"
+    },
+    "ProvisionedThroughput": {
+      "WriteCapacityUnits": 5,
+      "ReadCapacityUnits": 5
+    },
+    "KeySchema": [
+      {
+        "KeyType": "HASH",
+        "AttributeName": "prophetCode"
+      },
+      {
+        "KeyType": "RANGE",
+        "AttributeName": "eventTimestamp"
+      }
+    ]
+  }
+]
+}
