@@ -29,25 +29,25 @@
     "ReadCapacityUnits": 5
   },
   "GlobalSecondaryIndexes": [
-  {
-    "IndexName": "ProphetFollowersIndex",
-    "Projection": {
-      "ProjectionType": "ALL"
-    },
-    "ProvisionedThroughput": {
-      "WriteCapacityUnits": 5,
-      "ReadCapacityUnits": 5
-    },
-    "KeySchema": [
-      {
-        "KeyType": "HASH",
-        "AttributeName": "prophetCode"
+    {
+      "IndexName": "ProphetFollowersIndex",
+      "Projection": {
+        "ProjectionType": "ALL"
       },
-      {
-        "KeyType": "RANGE",
-        "AttributeName": "followerCode"
-      }
-    ]
-  }
-]
+      "ProvisionedThroughput": {
+        "WriteCapacityUnits": 5,
+        "ReadCapacityUnits": 5
+      },
+      "KeySchema": [
+        {
+          "KeyType": "HASH",
+          "AttributeName": "prophetCode"
+        },
+        {
+          "KeyType": "RANGE",
+          "AttributeName": "followerCode"
+        }
+      ]
+    }
+  ]
 }
